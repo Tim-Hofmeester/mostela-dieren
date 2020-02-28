@@ -8,4 +8,6 @@ In spite of their potential important role in shaping small mammal population dy
 
 <b>Data</b>
 
-Description will follow
+The occ- file contain the detection history and covariate data as used in the manuscript.
+
+The R-script contains the description of the model and code to run the model using the different MSocc- files.
