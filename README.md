@@ -8,6 +8,9 @@ In spite of their potential important role in shaping small mammal population dy
 
 <b>Data</b>
 
-The occ- file contain the detection history and covariate data as used in the manuscript.
+The occ- files contain the detection history and covariate data as used in the manuscript.
+The weasel-activity-data contains the time of detection data needed for the activity pattern analysis.
 
-The R-script contains the description of the model and code to run the model using the different MSocc- files.
+The analysis is split in two R-scripts:
+Occ-Mostela-Dieren-MS.R contains the description of the model and code to run the occupancy model using the different occ- files.
+Activity-analysis-Mostela-Dieren-MS.R contains the code needed to run the activity analysis using the weasel-activity-data file.
