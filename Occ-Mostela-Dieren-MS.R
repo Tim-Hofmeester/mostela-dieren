@@ -17,6 +17,13 @@ cat(file="occ-Weasel17month.txt",
 
     int.p ~ dunif(0,1)          #Intercept for detection probability 
 
+    # prior for random intercept per location
+    sigma_r ~ dunif(0,100)
+    tau_r <- 1/(sigma_r*sigma_r)
+    for(j in 1:n.loc){
+    r.psi[j] ~ dnorm(0,tau_r)
+    }
+
     # Priors for random intercepts per month
     sigma_r ~ dunif(0,100)
     tau_r <- 1/(sigma_r*sigma_r)
@@ -32,14 +39,16 @@ cat(file="occ-Weasel17month.txt",
     beta.lp ~ dnorm(0,0.001)
     
     
-    #Likelihood (or basic model structure)
+     #Likelihood (or basic model structure)
     for(i in 1:n.site){
+    
     #Occurrence in site i
     z[i] ~ dbern(psi[i])
-    logit(psi[i]) <- logit(int.psi) + r.psi[month[i]]
+    logit(psi[i]) <- logit(int.psi) + r.psi[loc[i]] + r.psi2[month[i]]
     
     
     for(k in 1:n.days){
+    
     # detection probability on day k
     y[i,k] ~ dbern(mu.y[i,k])
     mu.y[i,k] <- z[i] * p[i,k]
@@ -122,7 +131,7 @@ load("occ-weasel2017.RData")
 attach(data)
 
 win.data <- list(y=y, n.site=dim(y)[1],n.days=dim(y)[2],diameter=diameter,
-                 month=month, n.month=n.month)
+                 month=month, n.month=n.month, loc=loc, n.loc=n.loc)
 # Initial values
 zst <- apply(y,1,max,na.rm=T)      #inits for presence (z)
 inits <- function()list(z=zst, int.psi=0.5)
