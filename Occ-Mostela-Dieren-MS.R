@@ -124,7 +124,7 @@ params <- c("int.psi","int.p","beta.lp","psi.mar","psi.apr","psi.may","psi.jun",
             "det.2wk.jun10","det.2wk.jul10","det.2wk.aug10","det.2wk.sep10","det.2wk.oct10")
 
 # MCMC settings
-ni <- 120000; nt <- 30; nb <- 30000; nc <- 3
+ni <- 150000; nt <- 30; nb <- 30000; nc <- 3
 
 ## load data
 load("occ-weasel2017.RData")
@@ -247,7 +247,7 @@ params <- c("int.psi","int.p","beta.lp","psi.feb","psi.mar","psi.apr","psi.may",
             "det.2wk.jun10","det.2wk.jul10","det.2wk.aug10","det.2wk.sep10","det.2wk.oct10")
 
 # MCMC settings
-ni <- 120000; nt <- 30; nb <- 30000; nc <- 3
+ni <- 150000; nt <- 30; nb <- 30000; nc <- 3
 
 ## load data
 load("occ-weasel2018.RData")
