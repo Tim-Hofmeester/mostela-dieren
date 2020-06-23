@@ -14,3 +14,9 @@ The weasel-activity-data contains the time of detection data needed for the acti
 The analysis is split in two R-scripts:
 Occ-Mostela-Dieren-MS.R contains the description of the model and code to run the occupancy model using the different occ- files.
 Activity-analysis-Mostela-Dieren-MS.R contains the code needed to run the activity analysis using the weasel-activity-data file.
+
+<b>Repository</b>
+
+The published version of the data and code can be found on Zenodo
+
+<a href="https://zenodo.org/badge/latestdoi/242999580"><img src="https://zenodo.org/badge/242999580.svg" alt="DOI"></a>
