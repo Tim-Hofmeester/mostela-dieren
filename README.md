@@ -1,6 +1,6 @@
 # mostela-dieren
 
-Repository for data and script for the manuscript: Jeroen Mos & Tim R. Hofmeester (accepted) The Mostela: an adjusted camera-trapping device as a promising non-invasive tool to study and monitor small mustelids. Mammal Research.
+Repository for data and code for the manuscript: Mos, Jeroen, and Tim Ragnvald Hofmeester. “The Mostela: An Adjusted Camera Trapping Device as a Promising Non-Invasive Tool to Study and Monitor Small Mustelids.” Mammal Research, 2020. https://doi.org/10.1007/s13364-020-00513-y.
 
 <b>Abstract</b>
 
@@ -17,6 +17,6 @@ Activity-analysis-Mostela-Dieren-MS.R contains the code needed to run the activi
 
 <b>Repository</b>
 
-The published version of the data and code can be found on Zenodo
+A secured version of the data and code as used in the published article can be found on Zenodo:
 
 <a href="https://zenodo.org/badge/latestdoi/242999580"><img src="https://zenodo.org/badge/242999580.svg" alt="DOI"></a>
