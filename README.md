@@ -19,4 +19,4 @@ Activity-analysis-Mostela-Dieren-MS.R contains the code needed to run the activi
 
 A secured version of the data and code as used in the published article can be found on Zenodo:
 
-<a href="https://zenodo.org/badge/latestdoi/242999580"><img src="https://zenodo.org/badge/242999580.svg" alt="DOI"></a>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.242999580.svg)](https://doi.org/10.5281/zenodo.242999580)
